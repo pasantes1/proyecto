@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+:root {
+    --color_principal: #ee7a53;;
+    --tamaño_fuente: 20px;
+    --tamaño_fuente_boton: 18px;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color_principal);
+    box-shadow: 0 0 10px 0 #00000038;
+    position: fixed;
+    ;
+    top: 0;
+    z-index: 1;
+}
+
+header .menu_content {
+    width: 1600px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_content .logo-content {
+    width: 700px;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.menu_content .logo-content h1 {
+    font-size: 45px;
+    color: white;
+}
+
+.menu_content .logo-content input {
+    width: 340px;
+    height: 50px;
+    border-radius: 60px;
+    border: 0;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    outline: none;
+    border: solid 01px rgba(255, 255, 255, 0.623);
+    backdrop-filter: blur(4px)saturate(180px);
+}
+
+.logo-content .buscador {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo-content .buscador button {
+    border: 0;
+    border-radius: 50%;
+    width: 47px;
+    height: 47px;
+    cursor: pointer;
+    background: #E9967A;
+    position: absolute;
+    right: 03px;
+    z-index: 1;
+}
+
+.buscador button img {
+    width: 25px;
+}
+
+::placeholder {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.menu_content nav {
+    width: 900px;
+    height: 90px;
+}
+
+.menu_content nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    list-style: none;
+}
+
+nav li a {
+    font-size: var(--tamaño_fuente);
+    color: white;
+    padding: 10px;
+    display: block;
+    transition: all 300ms;
+}
+
+nav ul button {
+    width: 150px;
+    height: 48px;
+    font-size: var(--tamaño_fuente_boton);
+    border-radius: 10px;
+    border: 4px solid rgb(245, 58, 25);
+    cursor: pointer;
+    background-color: #E9967A;
+    color: rgb(245, 58, 25);
+    transition: all 300ms;
+    box-shadow: 0 0 10px 0 #00000063;
+} 
+
+nav ul button a{
+    color: rgb(245, 58, 25);
+
+}
+
+nav ul button:hover {
+    color: white;
+    background-color: rgb(245, 58, 25);
+}
+
+nav ul button a:hover {
+    color: white;
+}
+
+nav li a:hover {
+    transform: scale(1.1);
+    color: rgb(245, 58, 25);
+}
+
+.content {
+    width: 100%;
+    height: 765px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #28aad1;
+    background-repeat: no-repeat;
+}
+
+.content .box {
+    width: 95%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #0000001e;
+}
+
+.box .text {
+    width: 40%;
+    height: 570px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    overflow: hidden;
+}
+
+.text h1 {
+    font-size: 70px;
+    text-align: left;
+
+}
+
+.text p {
+    font-size: var(--tamaño_fuente);
+}
+
+.text .linea {
+    width: 90%;
+    background-color: black;
+    height: 03px;
+    margin-top: -20px;
+}
+
+.text button {
+    width: 190px;
+    height: 130px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(233, 90, 64);
+    border: 0;
+    transition: all 300ms;
+    box-shadow: 0 0 10px 0 #00000063;
+}
+
+.text button a {
+    color: white;
+}
+
+.box .img {
+    width: 40%;
+    height: 550px;
+    background-image: url(https://cdn3d.iconscout.com/3d/premium/thumb/robot-3d-icon-download-in-png-blend-fbx-gltf-file-formats--bot-machine-robotic-future-things-and-ai-pack-technology-icons-6740636.png?f=webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+.box .img::after {
+    content: '';
+    width: 150px;
+    height: 20px;
+    position: absolute;
+    background: linear-gradient(#61616121, #4646461e);
+    bottom: 0;
+    left: 285px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.089);
+
+}
